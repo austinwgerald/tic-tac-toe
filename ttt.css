@@ -1,0 +1,194 @@
+/*
+* CSS stylesheet for tic tac toe game
+* Written by Austin Gerald
+* Started 3-15-16
+*/
+
+
+h1, h3, h4{
+    color: white;
+}
+body {
+    background-image: url("images/background.jpg");
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+#grid {
+    margin:0 auto;
+    width: 600px;
+}
+
+.grid-element {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: dashed white;
+}
+
+.gridLeft {
+    border-left: hidden;
+}
+
+.gridRight {
+    border-right: hidden;
+}
+
+.gridTop{
+    border-top: hidden;
+}
+
+.gridBottom{
+    border-bottom:hidden;
+}
+
+img{
+    width:200px;
+    height:200px;
+}
+
+.container{
+    margin:0 auto;
+}
+
+#announce{
+    text-align: center;
+}
+
+.blur{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+
+}
+
+#count{
+    margin:0 auto;
+    padding-top: 635px;
+    width: 50%;
+    text-align: center;
+}
+
+table, th, td{
+    color: white;
+    text-align: center;
+    margin:0 auto;
+    mso-cellspacing: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+
+    /*z-index: -1;*/
+}
+
+/*http://stackoverflow.com/questions/19086576/on-click-button-pop-up-div-should-be-center-to-screen*/
+#endOfGameSplash{
+    visibility: hidden;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background: rgba(76, 175, 80, 0.80);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    /*background-color: transparent;*/
+
+    color: white;
+    font-size: 24px;
+    width:300px;
+    height:130px;
+
+
+    margin-left:-150px;
+    margin-top:-60px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -moz-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -webkit-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    z-index: 9002; /*above nine thousand*/
+}
+
+#endOfGameSplash:hover {
+    background-color: #4CAF50;
+}
+
+#winStrike{
+    visibility: hidden;
+    position: fixed;
+    top: 200px;
+    width: 600px;
+    height: 600px;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -300px;
+
+    z-index: -1;
+}
+
+/*http://codepen.io/derekmorash/pen/XddZJY */
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.home {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.home:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+.newGame {
+    border-radius: 3em;
+    border-color: #2ecc71;
+    color: #2ecc71;
+    background-image: -webkit-linear-gradient(top, transparent 50%, #2ecc71 50%);
+    background-image: linear-gradient(to bottom, transparent 50%, #2ecc71 50%);
+    background-position: 0 0;
+    background-size: 200%;
+    -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
+    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+}
+.newGame:hover {
+    color: #fff;
+    background-position: 0 100%;
+}
+/*End button CSS*/
